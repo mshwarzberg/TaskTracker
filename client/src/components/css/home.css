@@ -1,0 +1,57 @@
+@keyframes movefromleft {
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes movefromright {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.home--button {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home--button button  {
+    width: 50%;
+    font-family: 'Smooch Sans', sans-serif;
+    height: 70%;
+    border: none;
+    font-size: 4.5rem;
+    letter-spacing: 0.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 200ms ease;
+    background-color: rgb(25,25,25);
+    color: rgb(220,220,220);
+}
+
+.home--button button:hover {
+    color: rgb(200,200,200);
+    background-color: black;
+    font-size: 8rem;
+}
+
+#newtaskbutton {
+    animation:  800ms linear 0s 1 movefromleft;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#viewtaskbutton {
+    animation: 800ms linear 0s 1 movefromright;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}

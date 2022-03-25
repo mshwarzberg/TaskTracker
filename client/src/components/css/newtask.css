@@ -1,0 +1,129 @@
+@keyframes slideFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.new--task {
+    animation: 800ms linear 0s 1 slideFromTop;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.newtask--form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.new--task label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.new--task h1 {
+    text-shadow: .3rem .3rem .5rem white, .3rem .3rem .5rem black;
+    font-style: oblique;
+    font-size: 4rem;
+    margin: 3rem auto 3rem auto;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 500ms ease;
+}
+
+.new--task h1:hover {
+    text-shadow: 0 0 white;
+    font-size: 4.2rem;
+}
+
+#task--new-name {
+    text-indent: .5rem;
+    height: 2.5rem;
+    width: 50%;
+    font-size: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+.new--task textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: .3rem;
+    height: 10rem;
+    width: 50%;
+    outline: none;
+    font-size: 1rem;
+    text-indent: .5rem;
+    margin-bottom: 2rem;
+}
+
+#task--new-reminder {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    margin-left: -3rem;
+}
+
+.reminder-label {
+    margin-left: 3rem;
+}
+
+.reminder-input:checked {
+    -webkit-appearance: none;
+	background-color: black;
+	border: 10px solid #cacece;
+	box-shadow: .3rem .3rem .2rem black, inset 0px -1rem 10px -1rem rgb(50,50,50);
+    outline: none;
+    cursor: pointer;
+}
+
+.reminder-input {
+	background-color: white;
+	border: .1rem double black;
+    cursor: pointer;
+    outline: none;
+}
+
+#task--new-deadline {
+    width: 50%;
+    height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100,100,100);
+    margin-bottom: 2rem;
+    text-indent: .3rem;
+}
+
+#task--new-typeof {
+    width: 30%;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    box-shadow: .5rem .5rem 1rem #000;
+    margin-bottom: 3rem;
+    text-indent: .2rem;
+    outline: none;
+}
+
+#task--new-button {
+    margin-top: 2rem;
+    padding: 2rem 5rem 2rem 5rem;
+    width: 25%;
+    font-size: 1.3rem;
+    color:white;
+    text-shadow: -.1rem .1rem .1rem black;
+    background-color: rgb(60,60,60);
+    border: none;
+}
+
+#task--new-button:hover {
+    transition: 200ms ease;
+    background-color: black;
+    text-shadow: -1px 1px 2px white;
+    font-size: 1.5rem;
+    border: solid 2px white;
+    cursor: pointer;
+}
